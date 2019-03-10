@@ -1,7 +1,7 @@
 #include "MARRTstar.h"
 #include "validityChecker.h"
 #include "myMotionValidator.h"
-#include "draw.h"
+// #include "draw.h"
 #include <ompl/geometric/SimpleSetup.h>
 #include <ompl/base/spaces/RealVectorStateSpace.h>
 //#include <ompl/base/spaces/SE2StateSpace.h>
@@ -179,7 +179,7 @@ out2:	std::cout<<"please input the number of agents(1-5):"<<std::endl;
 
 	planWithSimpleSetup(agent_num);
 	std::cout<<"check num: "<<check_num;
-	drawMap(60.0,40.0,agent_num);
+	// drawMap(60.0,40.0,agent_num);
 	return 0;
 }
 

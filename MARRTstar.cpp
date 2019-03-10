@@ -52,7 +52,8 @@ void ompl::geometric::MaRRTstar::setup()
     }
 
     if (!nn_)
-        nn_.reset(tools::SelfConfig::getDefaultNearestNeighbors<Motion*>(si_->getStateSpace()));
+        // nn_.reset(tools::SelfConfig::getDefaultNearestNeighbors<Motion*>(si_->getStateSpace()));
+        nn_.reset(tools::SelfConfig::getDefaultNearestNeighbors<Motion*>( (ompl::base::Planner*)this));
     nn_->setDistanceFunction(boost::bind(&MaRRTstar::distanceFunction, this, _1, _2));
 
     // Setup optimization objective
