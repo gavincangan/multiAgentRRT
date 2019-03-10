@@ -1,4 +1,8 @@
-##DESCRIPTION
+Forked from [https://github.com/luo-yuanfu/multiAgentPathPlanning](https://github.com/luo-yuanfu/multiAgentPathPlanning)
+
+ - Fixed build for ROS Melodic, latest version on OMPL
+
+## DESCRIPTION
 Author: Luo Yuanfu
 
 Date: Nov 2014
@@ -10,5 +14,5 @@ This project is based on the following paper:
 
 Čáp, M., Novák, P., Vokrínek, J., & Pěchouček, M. (2013, May). Multi-agent RRT: sampling-based cooperative pathfinding. In Proceedings of the 2013 international conference on Autonomous agents and multi-agent systems (pp. 1263-1264). International Foundation for Autonomous Agents and Multiagent Systems.
 
-##Prerequisite
+## Prerequisite
 This project is developed using Eclipse Indigo in Ubuntu 12.04. OMPL library is needed for this project.
